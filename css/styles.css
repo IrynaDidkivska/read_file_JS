@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #fafafa;
+  color: #2c3141;
+  background-color: #ffeaec;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+span {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.text__title {
+  padding: 1.2rem;
+  font-size: 28px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .text__title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text__title {
+    font-size: 40px;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text__main {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text__main {
+    font-size: 28px;
+  }
+}
+
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+
+  background-color: #e3c0de;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.file-input__label svg {
+  height: 1rem;
+  margin-right: 0.4rem;
+}
+.read__btn {
+  padding: 0.2rem 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 0.75rem solid transparent;
+  border-radius: 1.5rem;
+  background: linear-gradient(#ffeaec, #ffeaec) padding-box,
+    linear-gradient(45deg, #ff52e5, #f6d242) border-box;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.53, 0.5, 0.53, 0.52) 0s;
+  transform: scale(1);
+
+  @media screen and (min-width: 1280px) {
+    padding: 0.5rem 0.8rem;
+    font-size: 28px;
+  }
+}
+.read__btn:hover,
+.read__btn:focus {
+  transform: scale(1.3);
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
